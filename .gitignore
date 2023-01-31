@@ -2,3 +2,5 @@
 .vscode
 .tmp.driveupload/
 tempCodeRunnerFile.js
+package-lock.json
+package.json
