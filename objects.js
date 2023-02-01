@@ -1,9 +1,17 @@
 const nikhil = {
     firstNmae: 'Nikhil',
     lastName: 'anand',
-    age: 2023 - 2001,
+    bYear: 2001,
     job: 'Developer',
-    friends: ['f1', 'f2', 'f3', 'f4']
+    friends: ['f1', 'f2', 'f3', 'f4'],
+    //we can also create a methode here and also use it to create an atribute
+    calAge: function () {
+
+        this.age = 2037 - this.bYear;//here "this" keyword is like self in python .. this keyword stores name of the object that calls it .
+        return (this.age);
+
+
+    }
 
 }
 console.log(nikhil);
@@ -25,5 +33,9 @@ nikhil['pro'] = 'yes';
 console.log(nikhil);
 //////////////////////////////////////////////////////////////exercise present/////////////////////////////
 console.log(`${nikhil.firstNmae} has ${nikhil.friends.length} friends`);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+console.log(nikhil.calAge())
+/////////////////////////////////////////////////
+console.log(`${nikhil.firstNmae} is of ${nikhil.age} years`);
