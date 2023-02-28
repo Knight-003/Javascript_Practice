@@ -58,7 +58,8 @@ console.log(starterMenu, specialmenu);
 //mutating already decleared value 
 let a = 3;
 let b = 4;
-const obj = { a: 1, b: 8, c: 44 };
+const obj = { a: s= 1, b: 8, c: 44 };
+
 ({ a, b } = obj);
 const { c } = obj;
 // console.log(c);
