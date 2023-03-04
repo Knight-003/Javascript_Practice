@@ -9,6 +9,7 @@ const navv = document.querySelector("nav")
 const prof = document.querySelector("#profile")
 const over = document.getElementById("overlay")
 const drp = document.querySelector(".drp")
+const ims = document.querySelectorAll(".rnd")
 
 let fontsz = 11;
 let vMode = "🌚";
@@ -104,6 +105,34 @@ const dropdownCaller = function () {
 
     }
 }
+
+const randomizer = function () {
+
+    let prr = [];
+    let random = Math.floor((Math.random() * 3))
+    for (let index = 0; index < 3; index++) {
+
+
+        while ((prr.includes(random))) {
+            random = Math.floor((Math.random() * 3))
+
+
+        }
+
+        prr.push(random);
+
+        ims[index].src = `mdu${random}.jpg`
+        console.log(prr);
+
+
+    }
+
+
+
+
+}
+
+randomizer()
 
 
 

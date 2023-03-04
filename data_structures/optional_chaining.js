@@ -31,6 +31,25 @@ const restaurant = {
 
 
 
-console.log(restaurant.openingHours.mon?.open ?? "not exist");
-console.log(restaurant.openingHours.sat?.open|| "not exist");//there it works upon falsi values and the value of sat open is 0 therefore we use nullish operator
-console.log(restaurant.openingHours.sat?.open?? "not exist");
+// console.log(restaurant.openingHours.mon?.open ?? "not exist");
+// console.log(restaurant.openingHours.sat?.open|| "not exist");//there it works upon falsi values and the value of sat open is 0 therefore we use nullish operator
+// console.log(restaurant.openingHours.sat?.open?? "not exist");
+
+const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+
+
+for (day of days) {
+
+    console.log(restaurant.openingHours[day]?.open ?? "not exist");//[]we use this to access attribute stored in variable
+
+
+}
+
+//we can also use it with methods 
+console.log(restaurant.order?.({ time: 4, mainIndex: 5, id: 5 }) ?? "hellow");
+
+// we can also use  this with array
+arr = [{ n: 1, g: 1 }]
+
+console.log(arr[0]?.n ?? "thenga");
+

@@ -119,3 +119,24 @@ nav {
     visibility: hidden;
 
 }
+
+.new {
+    border: 2px solid red;
+    height: 500px;
+    width: 1515px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+
+#bootstrap_slider {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
