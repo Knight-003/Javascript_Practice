@@ -100,3 +100,16 @@ const avg = function (...args) {
 avg(...Object.values(game.odds))
 
 
+const printer = function () {
+
+    for ([team, value] of Object.entries(game.odds)) {
+
+
+        const strng = team === "x" ? "3.25" : `${team}: ${value}`;
+        console.log(strng);
+    }
+
+
+}
+
+printer()

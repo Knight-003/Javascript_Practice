@@ -1,7 +1,7 @@
 const plusButton = document.getElementById("button_plus");
 const minusButton = document.getElementById("button_minus");
 const modeChangerButton = document.getElementById("modechanger");
-const fontSizeEl = document.getElementById("fontSize");
+const fontSizeEl = document.getElementById("inp_area");
 const mainEl = document.querySelector("main")
 const bodyy = document.querySelector("body")
 const navv = document.querySelector("nav")
@@ -11,7 +11,7 @@ const over = document.getElementById("overlay")
 const drp = document.querySelector(".drp")
 const ims = document.querySelectorAll(".rnd")
 
-let fontsz = 11;
+let fontsz = Number(fontSizeEl.value);
 let vMode = "🌚";
 let isdark = false
 let isdrpdn = false
@@ -27,7 +27,7 @@ const increaser = function () {
     fontsz = fontsz + 1;
     // mainEl.setAttribute("style", `font-size: ${fontsz}px;`);
     mainEl.style.fontSize = `${fontsz}px`
-    fontSizeEl.textContent = fontsz;
+    fontSizeEl.value = fontsz;
 
 }
 
@@ -36,7 +36,7 @@ const decreaser = function () {
     // mainEl.setAttribute("style", `font-size: ${fontsz}px;`);//this method seset all value and apply only this property
     mainEl.style.fontSize = `${fontsz}px`
 
-    fontSizeEl.textContent = fontsz;
+    fontSizeEl.value = fontsz;
 
 }
 
@@ -84,6 +84,7 @@ const chk = function () {
 const drpActive = function () {
     isdrpdn = true
     drp.style.visibility = "visible"
+    
     over.style.visibility = "visible"
 
 
@@ -131,6 +132,14 @@ const randomizer = function () {
 
 
 }
+const inp = function (event) {
+
+    fontsz = Number(event.target.value);
+    mainEl.style.fontSize = `${fontsz}px`
+
+
+
+}
 
 randomizer()
 
@@ -147,9 +156,9 @@ modeChangerButton.addEventListener("click", chk)
 prof.addEventListener("click", dropdownCaller)
 over.addEventListener("click", drpdeactive)
 
+fontSizeEl.addEventListener("input", inp)
 
 
 
-
-
+// whenever an event occurs the event listner calls the function with argument event object which contains all information about that event 
 
