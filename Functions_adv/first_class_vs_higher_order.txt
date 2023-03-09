@@ -1,0 +1,9 @@
+
+first class function is just a concept or a feature which is souported by a programing language and js is one of them 
+it simpaly means that function is just a value 
+
+higher order functions are those types of functions which returns or takes another function as an argument or a return value
+
+higher order functions can be written only in language which soports first class because we can pass functions as value
+
+
