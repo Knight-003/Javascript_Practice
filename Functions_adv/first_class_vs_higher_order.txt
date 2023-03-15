@@ -6,4 +6,6 @@ higher order functions are those types of functions which returns or takes anoth
 
 higher order functions can be written only in language which soports first class because we can pass functions as value
 
-
+// example
+in document.addeventlistner("c",func)
+addeventlistner is higher order function and func is callback function
