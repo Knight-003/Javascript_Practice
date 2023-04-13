@@ -84,7 +84,7 @@ const chk = function () {
 const drpActive = function () {
     isdrpdn = true
     drp.style.visibility = "visible"
-    
+
     over.style.visibility = "visible"
 
 
@@ -161,4 +161,3 @@ fontSizeEl.addEventListener("input", inp)
 
 
 // whenever an event occurs the event listner calls the function with argument event object which contains all information about that event 
-

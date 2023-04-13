@@ -1,0 +1,13 @@
+percentage is with respect of its parent block element
+
+block element default is 100 psnt 
+
+container containing image generaly width of 90 psnt
+
+the problem with width while using percentage an be solved by setting max width 
+
+em is used in fonts . it is x times the size of its 1st parent 
+
+generaly ems should be avoided because it creates cascading effect 
+
+to counter this we will use rem . it takes refrence from the html element 
